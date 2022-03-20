@@ -1,0 +1,14 @@
+class Palindrome
+{
+    public static void main(String args[])
+    {
+        StringBuffer S1 = new StringBuffer("MADAM");
+        StringBuffer S2;
+        System.out.println("The given string is:"+ S1);
+        S2 = S1.reverse();
+        if(S1.equals(S2)==true)
+            System.out.println("It is a Palindrome String");
+        else
+            System.out.println("It is not a Palindrome String");
+    }
+}
