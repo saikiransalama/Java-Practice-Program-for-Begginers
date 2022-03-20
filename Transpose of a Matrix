@@ -1,0 +1,31 @@
+class MatTranspose
+{
+    public static void main(String args[])
+    int mat[][]={{1,3,4},{2,4,3},{3,4,5}};
+    int trans_mat[][]=new int[3][3];
+    for(int i=0;i<3;i++)
+    {
+        for(int j=0;j<3;j++)
+        {
+            trans_mat[i][j]=mat[j][i];
+        }
+    }
+    System.out.println("The givne matrix is:");
+    for(int i=0; i<3; i++)
+    {
+        for(int j=0; j<3; j++)
+        {
+            System.out.print(mat[i][j]+" ");
+        }
+        System.out.println();
+    }
+    System.out.println("The transpose of the given matrix is:");
+    for(int i=0; i<3; i++)
+    {
+        for(int j=0; j<3; j++)
+        {
+            System.out.pritln(trans_mat[i][j]+" ");
+        }
+        System.out.println();
+    }
+}
